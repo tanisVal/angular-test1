@@ -1,0 +1,19 @@
+
+<h3>Today's top stories</h3>
+<button class="btn btn-primary pull-right" (click)="addArticle()">Add Story</button>
+<br><br>
+<div class="col-md-9 col-md-offset-2">
+  <div class="panel panel-default col-md-12" *ngFor="let article of articles">
+    <div class="col-md-3"> Image
+    </div>
+    <div class="col-md-6">
+      <h3>{{ article.title }}</h3>
+      <p></p>
+      <p>Autor</p>
+    </div>
+
+    <a class="btn btn-default pull-right"  (click)="edit(article)">Edit</a>
+  </div>
+  
+
+</div>
